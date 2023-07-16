@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+    text-transform: uppercase;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 70px;
+}
+.logo{
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    font-size: 25px;
+}
+nav a{
+    margin: 0 15px;
+    transition: color .4s ease;
+}
+nav a:hover{
+    color: crimson;
+}
+.banner{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url(backg.jpg);
+    background-position: center center;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+.banner .content h3{
+    color: aliceblue;
+    letter-spacing: 12px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 300;
+}
+.banner .content h1{
+    font-size: 4rem;
+    font-weight: 400;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin: 2rem 0;
+    letter-spacing: 2px;
+}
+.btn{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: crimson;
+    margin-right: 5px;
+    transition: opacity .4s ease;
+    background-image: linear-gradient(to right, #DC143C,#8d142c);
+}
+.btn:hover{
+    opacity: .6;
+}
+.social{
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+    display: flex;
+}
+.social a{
+    margin: 6px 12px;
+}
+.social i{
+    color: #25211E;
+    font-size: 35px;
+    opacity: 0.7;
+}
+.social a:hover i{
+    color: rgb(219, 3, 3);
+    transition: all ease 0.5s;
+}
